@@ -17,12 +17,11 @@ import javax.annotation.Resource;
 public class PaymentController {
     @Resource
     private PaymentService paymentService;
-
     @Value("${server.port}")
     private String serverPort;
 
     @PostMapping("/payment/create")
-    public CommonResult create(@RequestBody  Payment payment){
+    public CommonResult create(@RequestBody Payment payment){
         int i = paymentService.create(payment);
         log.info("****插入数据*****"+i);
         if (i>0){
@@ -45,3 +44,4 @@ public class PaymentController {
     }
 
 }
+

@@ -13,6 +13,9 @@
         <module>cloud-provider-payment8001</module>
         <module>cloud-consumer-order80</module>
         <module>cloud-api-commons</module>
+        <module>cloud-eureka-server7001</module>
+        <module>cloud-eureka-server7002</module>
+        <module>cloud-provider-payment8002</module>
     </modules>
 
 
@@ -30,7 +33,7 @@
         <mybatis.spring.boot.version>2.1.1</mybatis.spring.boot.version>
     </properties>
 
-    <!--子模块继承之后，作用：锁定版本+子模块不用谢GV-->
+    <!--子模块继承之后，作用：锁定版本+子模块不用谢gv-->
     <dependencyManagement>
         <dependencies>
             <!--spring boot 2.2.2.RELEASE-->
